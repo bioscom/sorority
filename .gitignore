@@ -1,0 +1,33 @@
+# Root ignore rules
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+.env
+.env.*
+backend/.venv/
+venv/
+
+# Django
+staticfiles/
+media/
+
+# Node / React / Next.js
+node_modules/
+.next/
+out/
+dist/
+npm-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+backend/*.log

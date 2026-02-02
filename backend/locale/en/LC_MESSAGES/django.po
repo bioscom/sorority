@@ -1,0 +1,609 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-22 22:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\accounts\models.py:7
+msgid "email address"
+msgstr ""
+
+#: .\accounts\models.py:8
+msgid "first name"
+msgstr ""
+
+#: .\accounts\models.py:9
+msgid "last name"
+msgstr ""
+
+#: .\accounts\models.py:10
+msgid "date joined"
+msgstr ""
+
+#: .\accounts\models.py:11
+msgid "is verified"
+msgstr ""
+
+#: .\accounts\models.py:11
+msgid "Designates whether the user's email has been verified."
+msgstr ""
+
+#: .\accounts\models.py:17 .\billing\models.py:32 .\chat\models.py:63
+#: .\chat\models.py:79
+msgid "user"
+msgstr ""
+
+#: .\accounts\models.py:18
+msgid "users"
+msgstr ""
+
+#: .\billing\models.py:10 .\interactions\models.py:96 .\profiles\models.py:138
+#: .\profiles\models.py:166
+msgid "name"
+msgstr ""
+
+#: .\billing\models.py:11 .\interactions\models.py:81
+#: .\interactions\models.py:97 .\profiles\models.py:167
+msgid "description"
+msgstr ""
+
+#: .\billing\models.py:12
+msgid "price"
+msgstr ""
+
+#: .\billing\models.py:14 .\profiles\models.py:169
+msgid "duration (days)"
+msgstr ""
+
+#: .\billing\models.py:14
+msgid "Duration of the subscription in days (e.g., 30 for 1 month)"
+msgstr ""
+
+#: .\billing\models.py:17
+msgid "features"
+msgstr ""
+
+#: .\billing\models.py:18
+msgid ""
+"JSON array of features included in the plan (e.g., ['ad_free', "
+"'advanced_filters'])"
+msgstr ""
+
+#: .\billing\models.py:20 .\billing\models.py:39 .\chat\models.py:11
+#: .\chat\models.py:32 .\chat\models.py:65 .\interactions\models.py:12
+#: .\interactions\models.py:40 .\interactions\models.py:55
+#: .\interactions\models.py:82 .\interactions\models.py:100
+#: .\notifications\models.py:24
+msgid "created at"
+msgstr ""
+
+#: .\billing\models.py:21 .\billing\models.py:40 .\chat\models.py:12
+#: .\chat\models.py:81
+msgid "updated at"
+msgstr ""
+
+#: .\billing\models.py:24
+msgid "Subscription Plan"
+msgstr ""
+
+#: .\billing\models.py:25
+msgid "Subscription Plans"
+msgstr ""
+
+#: .\billing\models.py:33
+msgid "plan"
+msgstr ""
+
+#: .\billing\models.py:34
+msgid "start date"
+msgstr ""
+
+#: .\billing\models.py:35
+msgid "end date"
+msgstr ""
+
+#: .\billing\models.py:36 .\chat\models.py:13 .\interactions\models.py:13
+msgid "is active"
+msgstr ""
+
+#: .\billing\models.py:37
+msgid "Stripe customer ID"
+msgstr ""
+
+#: .\billing\models.py:38
+msgid "Stripe subscription ID"
+msgstr ""
+
+#: .\billing\models.py:43
+msgid "User Subscription"
+msgstr ""
+
+#: .\billing\models.py:44
+msgid "User Subscriptions"
+msgstr ""
+
+#: .\chat\models.py:10
+msgid "match"
+msgstr ""
+
+#: .\chat\models.py:17
+msgid "Conversation"
+msgstr ""
+
+#: .\chat\models.py:18
+msgid "Conversations"
+msgstr ""
+
+#: .\chat\models.py:29 .\chat\models.py:78
+msgid "conversation"
+msgstr ""
+
+#: .\chat\models.py:30 .\interactions\models.py:111
+#: .\notifications\models.py:20
+msgid "sender"
+msgstr ""
+
+#: .\chat\models.py:31
+msgid "content"
+msgstr ""
+
+#: .\chat\models.py:33 .\notifications\models.py:23
+msgid "is read"
+msgstr ""
+
+#: .\chat\models.py:34
+msgid "read at"
+msgstr ""
+
+#: .\chat\models.py:38
+msgid "Message"
+msgstr ""
+
+#: .\chat\models.py:39
+msgid "Messages"
+msgstr ""
+
+#: .\chat\models.py:54
+msgid "👍"
+msgstr ""
+
+#: .\chat\models.py:55
+msgid "❤️"
+msgstr ""
+
+#: .\chat\models.py:56
+msgid "😂"
+msgstr ""
+
+#: .\chat\models.py:57
+msgid "😮"
+msgstr ""
+
+#: .\chat\models.py:58
+msgid "😢"
+msgstr ""
+
+#: .\chat\models.py:59
+msgid "😠"
+msgstr ""
+
+#: .\chat\models.py:62 .\notifications\models.py:22
+msgid "message"
+msgstr ""
+
+#: .\chat\models.py:64
+msgid "reaction type"
+msgstr ""
+
+#: .\chat\models.py:70
+msgid "Message Reaction"
+msgstr ""
+
+#: .\chat\models.py:71
+msgid "Message Reactions"
+msgstr ""
+
+#: .\chat\models.py:80
+msgid "is typing"
+msgstr ""
+
+#: .\chat\models.py:85
+msgid "Typing Indicator"
+msgstr ""
+
+#: .\chat\models.py:86
+msgid "Typing Indicators"
+msgstr ""
+
+#: .\interactions\models.py:10
+msgid "user 1"
+msgstr ""
+
+#: .\interactions\models.py:11
+msgid "user 2"
+msgstr ""
+
+#: .\interactions\models.py:18
+msgid "Match"
+msgstr ""
+
+#: .\interactions\models.py:19
+msgid "Matches"
+msgstr ""
+
+#: .\interactions\models.py:32
+msgid "Like"
+msgstr ""
+
+#: .\interactions\models.py:33
+msgid "Pass"
+msgstr ""
+
+#: .\interactions\models.py:34
+msgid "Super Like"
+msgstr ""
+
+#: .\interactions\models.py:37
+msgid "swiper"
+msgstr ""
+
+#: .\interactions\models.py:38
+msgid "swiped user"
+msgstr ""
+
+#: .\interactions\models.py:39
+msgid "action"
+msgstr ""
+
+#: .\interactions\models.py:45
+msgid "Swipe"
+msgstr ""
+
+#: .\interactions\models.py:46
+msgid "Swipes"
+msgstr ""
+
+#: .\interactions\models.py:53
+msgid "blocker"
+msgstr ""
+
+#: .\interactions\models.py:54
+msgid "blocked user"
+msgstr ""
+
+#: .\interactions\models.py:56 .\interactions\models.py:80
+msgid "reason"
+msgstr ""
+
+#: .\interactions\models.py:61
+msgid "Block"
+msgstr ""
+
+#: .\interactions\models.py:62
+msgid "Blocks"
+msgstr ""
+
+#: .\interactions\models.py:70
+msgid "Inappropriate Photos"
+msgstr ""
+
+#: .\interactions\models.py:71
+msgid "Harassment"
+msgstr ""
+
+#: .\interactions\models.py:72
+msgid "Spam"
+msgstr ""
+
+#: .\interactions\models.py:73
+msgid "Fake Profile"
+msgstr ""
+
+#: .\interactions\models.py:74
+msgid "Underage"
+msgstr ""
+
+#: .\interactions\models.py:75 .\profiles\models.py:14
+msgid "Other"
+msgstr ""
+
+#: .\interactions\models.py:78
+msgid "reporter"
+msgstr ""
+
+#: .\interactions\models.py:79
+msgid "reported user"
+msgstr ""
+
+#: .\interactions\models.py:83
+msgid "is resolved"
+msgstr ""
+
+#: .\interactions\models.py:88
+msgid "Report"
+msgstr ""
+
+#: .\interactions\models.py:89
+msgid "Reports"
+msgstr ""
+
+#: .\interactions\models.py:98 .\profiles\models.py:168
+msgid "cost"
+msgstr ""
+
+#: .\interactions\models.py:99 .\profiles\models.py:114
+msgid "image"
+msgstr ""
+
+#: .\interactions\models.py:103
+msgid "Gift"
+msgstr ""
+
+#: .\interactions\models.py:104
+msgid "Gifts"
+msgstr ""
+
+#: .\interactions\models.py:112
+msgid "receiver"
+msgstr ""
+
+#: .\interactions\models.py:113
+msgid "gift"
+msgstr ""
+
+#: .\interactions\models.py:114
+msgid "sent at"
+msgstr ""
+
+#: .\interactions\models.py:119
+msgid "User Gift"
+msgstr ""
+
+#: .\interactions\models.py:120
+msgid "User Gifts"
+msgstr ""
+
+#: .\notifications\models.py:12
+msgid "New Match"
+msgstr ""
+
+#: .\notifications\models.py:13
+msgid "New Message"
+msgstr ""
+
+#: .\notifications\models.py:14
+msgid "Profile View"
+msgstr ""
+
+#: .\notifications\models.py:15
+msgid "New Like"
+msgstr ""
+
+#: .\notifications\models.py:16
+msgid "New Gift"
+msgstr ""
+
+#: .\notifications\models.py:19
+msgid "recipient"
+msgstr ""
+
+#: .\notifications\models.py:21
+msgid "notification type"
+msgstr ""
+
+#: .\notifications\models.py:27
+msgid "content type"
+msgstr ""
+
+#: .\notifications\models.py:28
+msgid "object ID"
+msgstr ""
+
+#: .\notifications\models.py:33
+msgid "Notification"
+msgstr ""
+
+#: .\notifications\models.py:34
+msgid "Notifications"
+msgstr ""
+
+#: .\profiles\models.py:12
+msgid "Male"
+msgstr ""
+
+#: .\profiles\models.py:13
+msgid "Female"
+msgstr ""
+
+#: .\profiles\models.py:15
+msgid "Prefer not to say"
+msgstr ""
+
+#: .\profiles\models.py:19
+msgid "Single"
+msgstr ""
+
+#: .\profiles\models.py:20
+msgid "Divorced"
+msgstr ""
+
+#: .\profiles\models.py:21
+msgid "Widowed"
+msgstr ""
+
+#: .\profiles\models.py:22
+msgid "Separated"
+msgstr ""
+
+#: .\profiles\models.py:26
+msgid "bio"
+msgstr ""
+
+#: .\profiles\models.py:26
+msgid "A short biography about yourself."
+msgstr ""
+
+#: .\profiles\models.py:31
+msgid "date of birth"
+msgstr ""
+
+#: .\profiles\models.py:32
+msgid "gender"
+msgstr ""
+
+#: .\profiles\models.py:33
+msgid "looking for"
+msgstr ""
+
+#: .\profiles\models.py:34
+msgid "relationship status"
+msgstr ""
+
+#: .\profiles\models.py:35
+msgid "location"
+msgstr ""
+
+#: .\profiles\models.py:38
+msgid "max distance"
+msgstr ""
+
+#: .\profiles\models.py:38
+msgid "Maximum distance in km for discovering other users."
+msgstr ""
+
+#: .\profiles\models.py:39
+msgid "minimum age"
+msgstr ""
+
+#: .\profiles\models.py:40
+msgid "maximum age"
+msgstr ""
+
+#: .\profiles\models.py:42
+msgid "is hidden"
+msgstr ""
+
+#: .\profiles\models.py:42
+msgid "If checked, your profile will not be visible to other users."
+msgstr ""
+
+#: .\profiles\models.py:45
+msgid "Everyone"
+msgstr ""
+
+#: .\profiles\models.py:46
+msgid "Matches Only"
+msgstr ""
+
+#: .\profiles\models.py:47
+msgid "Premium Users Only"
+msgstr ""
+
+#: .\profiles\models.py:49
+msgid "photo visibility"
+msgstr ""
+
+#: .\profiles\models.py:50
+msgid "virtual currency"
+msgstr ""
+
+#: .\profiles\models.py:51
+msgid "is premium"
+msgstr ""
+
+#: .\profiles\models.py:52
+msgid "is online"
+msgstr ""
+
+#: .\profiles\models.py:54
+msgid "profile completion score"
+msgstr ""
+
+#: .\profiles\models.py:61
+msgid "Profile"
+msgstr ""
+
+#: .\profiles\models.py:62
+msgid "Profiles"
+msgstr ""
+
+#: .\profiles\models.py:108
+msgid "You must be at least 18 years old to create a profile."
+msgstr ""
+
+#: .\profiles\models.py:115
+msgid "is primary"
+msgstr ""
+
+#: .\profiles\models.py:115
+msgid "Designates if this is the user's primary profile photo."
+msgstr ""
+
+#: .\profiles\models.py:124
+msgid "Photo"
+msgstr ""
+
+#: .\profiles\models.py:125
+msgid "Photos"
+msgstr ""
+
+#: .\profiles\models.py:141
+msgid "Interest"
+msgstr ""
+
+#: .\profiles\models.py:142
+msgid "Interests"
+msgstr ""
+
+#: .\profiles\models.py:154
+msgid "Profile Interest"
+msgstr ""
+
+#: .\profiles\models.py:155
+msgid "Profile Interests"
+msgstr ""
+
+#: .\profiles\models.py:163
+msgid "Visibility Boost"
+msgstr ""
+
+#: .\profiles\models.py:164
+msgid "Match Boost"
+msgstr ""
+
+#: .\profiles\models.py:170
+msgid "boost type"
+msgstr ""
+
+#: .\profiles\models.py:174
+msgid "Boost"
+msgstr ""
+
+#: .\profiles\models.py:175
+msgid "Boosts"
+msgstr ""
+
+#: .\profiles\models.py:184
+msgid "feature vector"
+msgstr ""
+
+#: .\profiles\models.py:189
+msgid "User Feature Vector"
+msgstr ""
+
+#: .\profiles\models.py:190
+msgid "User Feature Vectors"
+msgstr ""
