@@ -178,6 +178,7 @@ export const TranslationProvider = ({ children }: { children: ReactNode }) => {
 
   const setLanguage = useCallback(
     (code: string) => {
+      console.log('[TranslationContext] setLanguage called with:', code);
       persistLanguage(code);
     },
     [persistLanguage]
@@ -195,6 +196,7 @@ export const TranslationProvider = ({ children }: { children: ReactNode }) => {
 
       const existing = translations[key];
       if (existing) {
+        console.log('[TranslationContext] Found translation for', key, ':', existing);
         return existing;
       }
 
@@ -203,6 +205,7 @@ export const TranslationProvider = ({ children }: { children: ReactNode }) => {
         return fallback;
       }
 
+      console.log('[TranslationContext] Queuing translation for', key, 'in language', language);
       inflightKeysRef.current.add(inflightKey);
       pendingRequestsRef.current.push({
         key,

@@ -32,6 +32,24 @@ const resolveMediaUrl = (src?: string | null): string | null => {
   return `${base}${path}`;
 };
 
+const formatDate = (dateString?: string | null): string => {
+  if (!dateString) {
+    console.warn('formatDate received null/undefined:', dateString);
+    return 'Unknown date';
+  }
+  try {
+    const date = new Date(dateString);
+    if (isNaN(date.getTime())) {
+      console.warn('Invalid date string:', dateString);
+      return 'Invalid date';
+    }
+    return date.toLocaleDateString();
+  } catch (error) {
+    console.error('Error formatting date:', dateString, error);
+    return 'Invalid date';
+  }
+};
+
 interface DashboardStats {
   new_matches_count: number;
   unread_messages_count: number;
@@ -59,7 +77,7 @@ interface Match {
   id: number;
   user1: any;
   user2: any;
-  matched_at: string;
+  created_at: string;
 }
 
 interface SwipeHistory {
@@ -690,7 +708,7 @@ export default function DashboardPage() {
                                     {otherUser.profile?.location || 'Location not set'}
                                   </p>
                                   <p className="text-xs text-gray-500 mb-4">
-                                    Matched {new Date(match.matched_at).toLocaleDateString()}
+                                    Matched {formatDate(match.created_at)}
                                   </p>
 
                                   {/* Bio Preview */}
@@ -854,7 +872,7 @@ export default function DashboardPage() {
                                   {liker.profile?.location || 'Location not set'}
                                 </p>
                                 <p className="text-xs text-gray-500 mb-4">
-                                  Liked {new Date(like.created_at).toLocaleDateString()}
+                                  Liked {formatDate(like.created_at)}
                                 </p>
 
                                 {/* Bio Preview */}

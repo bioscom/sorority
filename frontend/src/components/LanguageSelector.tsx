@@ -36,9 +36,15 @@ const LanguageSelector = () => {
 
   const persistPreference = useCallback(
     async (languageCode: string) => {
+      // If user is not authenticated, just update local language preference
+      if (!user) {
+        console.log('[LanguageSelector] User not authenticated, skipping backend save');
+        return;
+      }
+
       const profileIdentifier = user?.profile?.slug || user?.profile?.id;
       if (!profileIdentifier) {
-        showToast('Complete your profile before setting a preferred language.', 'error');
+        console.log('[LanguageSelector] User profile not yet loaded, skipping backend save');
         return;
       }
 
@@ -46,19 +52,20 @@ const LanguageSelector = () => {
         setIsSavingPreference(true);
         await profilesAPI.updateProfile(profileIdentifier, { preferred_language: languageCode });
         await refreshUser();
-        showToast('Language preference saved.', 'success');
+        console.log('[LanguageSelector] Language preference saved to backend');
       } catch (error) {
-        console.error('Failed to persist language preference', error);
-        showToast('Unable to save language preference right now.', 'error');
+        console.error('[LanguageSelector] Failed to persist language preference', error);
       } finally {
         setIsSavingPreference(false);
       }
     },
-    [refreshUser, user?.profile?.id]
+    [refreshUser, user?.profile?.id, user]
   );
 
   const handleLanguageChange = async (event: ChangeEvent<HTMLSelectElement>) => {
     const nextLanguage = event.target.value;
+    console.log('[LanguageSelector] Changing language to:', nextLanguage);
+    console.log('[LanguageSelector] Setting language context to:', nextLanguage);
     setLanguage(nextLanguage);
     await persistPreference(nextLanguage);
   };
